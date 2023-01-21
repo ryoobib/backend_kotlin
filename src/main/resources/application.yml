@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: duaily-server
+
+  jpa:
+    database: mysql   # ?? ?? ??
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect # ?? ?? ??
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        default_batch_fetch_size: 100
+        show_sql: true
+        format_sql: true
+
+  datasource:
+    url: jdbc:mysql://localhost:3305/test_db
+    username: test
+    password: test_pw
+    driver-class-name: com.mysql.cj.jdbc.Driver

@@ -3,7 +3,7 @@ spring:
     name: duaily-server
 
   jpa:
-    database: mysql   # ?? ?? ??
+    database: mysql
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect # ?? ?? ??
     hibernate:
       ddl-auto: update
@@ -18,3 +18,10 @@ spring:
     username: test
     password: test_pw
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+jwt:
+  secretKey : thisIsSecretKeyForTest
+  accessValidTime : 360000
+  refreshValidTime : 128000000
+  accessName : thisIstestForAccess
+  refreshName : thisIstestForRefresh
